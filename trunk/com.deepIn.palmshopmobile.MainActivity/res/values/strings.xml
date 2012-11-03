@@ -1,0 +1,28 @@
+<resources>
+
+    <string name="app_name">PalmShopMobile</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="home_exit">退出</string>
+    <string name="PalmShop">掌上旺铺</string>
+    <string name="Login">登录</string>
+    <string name="NoLogin">您还没有登录</string>
+    <string name="Home">首页</string>
+    <string name="Help">帮助</string>
+    <string name="About">关于</string>
+    <string name="about">易淘科技是一家专注于电子商务运营、软件开发及服务的科技公司，其主要产品有卖家店铺助手和卖家店铺展示。</string>
+    <string name="about_content">卖家店铺助主要致力于服务广大的淘宝卖家，为那些没有时间呆在电脑旁，而业务繁忙人士量身打造的一款软件。该软件基本上将电脑上开店所具有的功能搬到了这款软件中，其具有性能好、流量小、速度快等特点，特别适合在出差、坐车等没有固定场所的商务人士使用，同时方便随时给客户展示自己的店铺产品。解决了店主不在电脑旁仍旧可以查看店铺动态，查看订单，修改价格，时时联系买家，快速发货，不让您错过每一笔单子。</string>
+    <string name="about_zhanshi">店铺展示是一款为卖家打造手机客户端，面向买家使用。让消费者随时随地购买商家的产品，提高了商家的品牌效应，同时又方便了顾客。</string>
+    <string name="telephone">TEL：13951796703</string>
+    <string name="email">Email：lhpeixun@126.com</string>
+    <string name="qq">QQ：344565123</string>
+    <string name="baobeiMgr">宝贝管理</string>
+    <string name="tradeMgr">订单管理</string>
+    <string name="deliveryMgr">发货</string>
+    <string name="logisticMgr">查看物流</string>
+    <string name="commentMgr">评价管理</string>
+    <string name="wangwang">阿里旺旺</string>
+    
+
+</resources>
