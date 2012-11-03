@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <color name="tab_indicator_text">#fff0f0f0</color>
+    <color name="red">#ff780000</color>
+    <color name="dared">#ffff4500</color>
+    <color name="green">#ff008000</color>
+    <color name="OrangeRed">#ffff8c00</color>
+    <color name="Teal">#ff008080</color>
+    <color name="gray">#ff9b9c9c</color>
+    <color name="black">#ff000000</color>
+    <color name="blue">#ff4682b4</color>
+    <color name="grayblack">#ff707070</color>
+</resources>

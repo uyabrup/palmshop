@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout 
+        android:gravity="center_vertical" 
+        android:id="@+id/homepage_title_relativelayout" 
+        android:background = "#ffff6600"
+        android:layout_width="fill_parent" 
+        android:layout_height="40.0dip" 
+        android:layout_alignParentTop="true">
+        <Button 
+            android:textSize="15.0dip" 
+            android:textColor="#fffbf5ea" 
+            android:id="@+id/button_home_exit" 
+            android:background="#00000000" 
+            android:layout_width="65.0dip" 
+            android:layout_height="40.0dip" 
+            android:layout_marginLeft="5.0dip" 
+            android:text="@string/home_exit" 
+
+            android:layout_alignParentLeft="true" />
+        <TextView android:textSize="20.0dip" 
+
+            android:gravity="center" 
+            android:id="@+id/textView1" 
+            android:layout_width="wrap_content" 
+            android:layout_height="60.0dip" 
+            android:text="@string/PalmShop" 
+            android:layout_toLeftOf="@+id/button_login" 
+            android:layout_toRightOf="@+id/button_home_exit" />
+        <Button 
+            android:textSize="15.0dip" 
+            android:textColor="#fffbf5ea" 
+            android:id="@+id/button_login" 
+            android:background="#00000000" 
+            android:layout_width="60.0dip" 
+            android:layout_height="40.0dip" 
+            android:layout_marginRight="5.0dip" 
+            android:text="@string/Login" 
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    
+    <TextView 
+        android:textSize="15.0dip" 
+        android:gravity="center" 
+        android:id="@+id/textView_home_top" 
+        android:layout_width="fill_parent" 
+        android:layout_height="25.0dip" 
+        android:background="@drawable/top"
+        android:text="@string/NoLogin" 
+        android:layout_below="@id/homepage_title_relativelayout"/>
+    
+    <LinearLayout 
+ 	    android:orientation="vertical" 
+ 	    android:id="@+id/LinearLayout_gridView_home" 
+ 	    android:layout_width="fill_parent" 
+ 	    android:layout_height="wrap_content" 
+ 	    android:layout_above="@+id/LinearLayout_home_abouttop" 
+ 	    android:layout_below="@id/textView_home_top">
+        <GridView android:gravity="center" 
+            android:id="@+id/gridView_home" 
+            android:layout_width="fill_parent" 
+            android:layout_height="fill_parent" 
+            android:horizontalSpacing="10.0dip" 
+            android:verticalSpacing="10.0dip" 
+            android:stretchMode="columnWidth" 
+            android:columnWidth="400.0dip" 
+            android:numColumns="3" />
+    </LinearLayout>
+    
+ 	<LinearLayout 
+ 	    android:visibility="gone"
+ 	    android:orientation="vertical" 
+ 	    android:id="@+id/LinearLayout_home_abouttop" 
+ 	    android:layout_width="fill_parent" 
+ 	    android:layout_height="wrap_content" 
+ 	    android:layout_above="@+id/LinearLayout_home">
+        <LinearLayout 
+            android:orientation="vertical" 
+            android:id="@+id/LinearLayout_home_about" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content">
+            <TextView 
+                android:textColor="@drawable/black" 
+                android:gravity="left" 
+                android:id="@+id/textView_home_about" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:text="@string/about" />
+            <TextView android:textColor="@drawable/black" 
+                android:gravity="left" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:text="@string/about_content" />
+            <TextView android:textColor="@drawable/black" 
+                android:gravity="left" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:text="@string/about_zhanshi" />
+            <TextView 
+                android:textColor="@color/red" 
+                android:gravity="left" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:text="@string/telephone" />
+            <TextView android:textColor="@drawable/black" 
+                android:gravity="left" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:text="@string/email" />
+            <TextView 
+                android:textColor="@color/gray" 
+                android:gravity="center" 
+                android:paddingTop="12.0dip" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:text="Copyright@?2011 yitao. All rights reserved" />
+            <TextView android:textColor="@color/gray" 
+                android:gravity="center" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:text="南京易淘网络科技有限公司版权所有" />
+        </LinearLayout>
+    </LinearLayout>
+    
+<LinearLayout 
+ 	    android:gravity="center_vertical" 
+ 	    android:id="@+id/LinearLayout_home" 
+ 	    android:background="@drawable/buttom" 
+ 	    android:layout_width="fill_parent" 
+ 	    android:layout_height="45.0dip" 
+ 	    android:layout_alignParentBottom="true">
+ 	 <TableLayout 
+            android:layout_width="fill_parent" 
+            android:layout_height="45.0dip" 
+            android:stretchColumns="*">
+            <TableRow 
+                android:layout_width="fill_parent" 
+                android:layout_height="45.0dip">
+                <Button 
+                    android:textColor="#ffffffff" 
+                    android:gravity="center" 
+                    android:id="@+id/button_home" 
+                    android:background="@drawable/homebutton_selector" 
+                    android:layout_width="wrap_content" 
+                    android:layout_height="45.0dip" 
+                    android:text="@string/Home" 
+                    android:drawableTop="@drawable/home" />
+                <Button 
+                    android:textColor="#ffffffff" 
+                    android:gravity="center" 
+                    android:id="@+id/button_help" 
+                    android:background="@drawable/homebutton_selector" 
+                    android:layout_width="wrap_content" 
+                    android:layout_height="45.0dip" 
+                    android:text="@string/Help" 
+                    android:drawableTop="@drawable/help" />
+                <Button 
+                    android:textColor="#ffffffff" 
+                    android:gravity="center" 
+                    android:id="@+id/button_about" 
+                    android:background="@drawable/homebutton_selector" 
+                    android:layout_width="wrap_content" 
+                    android:layout_height="45.0dip" 
+                    android:text="@string/About" 
+                    android:drawableTop="@drawable/about" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+ 	
+
+</RelativeLayout>
